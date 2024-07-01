@@ -46,8 +46,8 @@ def predict_data(model, tokenizer, text, max_len):
     return predicted_label 
 
 
-txt_input = 'I love you'
-predicted_label = predict_data(txt_input)
+txt_input = input("Enter Data To predict Emotions: ")
+predicted_label = predict_data(model, tokenizer, txt_input, 100)
 print(f"Prediction Emoton Label: {predicted_label}")
 
 
